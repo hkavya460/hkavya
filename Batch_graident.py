@@ -22,7 +22,7 @@ def cost_function(h_funct,y):
     m = len(y)
     sse = np.sum(error **2) / (2 *m)
     return sse
-    #Gradient descent is parameter update, update the theta untill it leads to global minima (reduce the cost function)
+    #Gradient descent is parameter update, update the theta untill it leads to global minima(convergence) using alpha  (reduce the cost function)
 def gradient_descent(x,y,alpha,num_itera):
     theta = np.zeros(x.shape[1])
     cost =[]
@@ -36,7 +36,7 @@ def gradient_descent(x,y,alpha,num_itera):
 
 
 
-
+#by testing two different alpha values and num of  iteration to which one gives best theta values and what number of iteration it will reaches convergence
 theta, cost= gradient_descent(x, y, 0.000001, 1000)
 # theta ,cost= gradient_descent(x,y,0.0001,1000)
 print("theta values are ",theta)
