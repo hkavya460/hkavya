@@ -1,0 +1,7 @@
+BEGIN {FS=","}
+{
+if ($2 > 1965 ){
+print $4 "women oscar in the year",$2 ,"when she was", $3, "age for the movie" $5
+}
+}
+END {print "Done",FILENAME}
