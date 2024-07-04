@@ -15,21 +15,6 @@ for ((i=1; i<v; i++)); do
 echo $min
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #length of the array is 
 #v=${#a[@]}
 #echo "array lenght is ;", $v
