@@ -56,9 +56,9 @@ def three_layer_ffn():
         z_3 = np.dot(w_3[-1], act_2) + b3
         act_3 = relu_function(z_3)
 
-    print("the activation value of the first hidden layer ",act_1.max())
-    print("the activation value of the second  hidden layer ", act_2.max())
-    print("the activation value of the third  hidden layer ", act_3.max())
+    # print("the activation value of the first hidden layer ",act_1.max())
+    # print("the activation value of the second  hidden layer ", act_2.max())
+    # print("the activation value of the third  hidden layer ", act_3.max())
 
 def  main():
     x = np.linspace(-10,10,100)
