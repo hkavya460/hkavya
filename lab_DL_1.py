@@ -1,20 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import math
-# values between -10 and 10. Call this list as z. Implement the following functions and its derivative. Use class notes to find the expression for these functions. Use z as input and
-# plot both the function outputs and its derivative outputs.
-# a. Sigmoid
-# b. Tanh
-# c. ReLU (Rectified Linear Unit)
-# d. Leaky ReLU
-# e. Softmax
-# # Implement the following functions and its derivative
-#sigmoid function  = 1 / 1+ e^ -x used in logistic regression for binary classification problems
-#2. Write down the observations from the plot for all the above functions in the code.
-# a. What are the min and max values for the functions
-# b. Are the output of the function zero-centred
-# c. What happens to the gradient when the input values are too small or too big
-
 def sigmoid_function(z):
     g = 1 / (1 + np.exp(-z))
     #derivative  of the sigmoid  function
@@ -92,7 +78,6 @@ def softmax_function(z):
     plt.ylabel('Softmax function')
     plt.show()
 
-##############################################
 
 def main():
     z = np.linspace(-10, 10, num=100)
