@@ -1,3 +1,6 @@
+# Feed Forward neural network(FFNN)   with various number of hidden layers from sracth 
+# In this FFNN how neural network pass the input to next layer by doing the matehematical operations  
+
 import  numpy as np
 np.random.seed(42)
 def relu_function(x):
