@@ -1,7 +1,10 @@
+# Introduction of different activation functions which introduce the non linearity to the data to reslove the complex problems 
+#Her different activation functions example sigmoid,tanh,relu,leakyrelu ,softmax are the activation functions used 
+
 import numpy as np
 import matplotlib.pyplot as plt
 import math
-def sigmoid_function(z):
+def sigmoid_function(z): # range [0,1] 
     g = 1 / (1 + np.exp(-z))
     #derivative  of the sigmoid  function
     g_1 = 1 / (1+ (np.exp(-z))) * (1 - 1 / (1+ (np.exp(-z))))
@@ -19,7 +22,7 @@ def sigmoid_function(z):
     return g_1
     #tanh function or hyperbolic tangent function
 
-def tanh_function(z):
+def tanh_function(z): #range[-1,1] 
     f = (np.exp(z) - np.exp(-z)) / (np.exp(z) + np.exp(-z))
     plt.plot(z,f,label="Tanh function")
     plt.xlabel('z values')
@@ -34,7 +37,7 @@ def tanh_function(z):
     print("the maximum value of tanh function is ", max(f).round(3))
     return f_1,f
 
-def relu_function(z):
+def relu_function(z): # range(0,infinity)
     f = np.maximum(0,z)
 
     # plt.show()
@@ -58,7 +61,7 @@ def relu_function(z):
     print("the maximum value of relu function is ", max(f).round(3))
     return f
 
-def leaky_relu(z):
+def leaky_relu(z): 
     f = np.maximum(0.01*z , z)
     plt.plot(z, f)
     plt.xlabel('z values')
