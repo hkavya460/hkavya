@@ -81,5 +81,6 @@ def three_layer_backpropgation():
 def main():
     two_layer_backpropation()
     three_layer_backpropgation()
+if __name__=="__main__":
+    main()
 
-main()
