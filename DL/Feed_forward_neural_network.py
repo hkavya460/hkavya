@@ -61,16 +61,6 @@ def three_layer_ffn():
     print("the activation value of the third  hidden layer ", act_3.max())
 
 
-def backpropagtion():
-    input_values = np.array([[1], [0], [1], [0]])
-    print(input_values.shape)
-    w = np.random.rand(2,2)
-    # b = np.random.rand(2,1)
-    # # calculating the
-    # z = np.dot(w, input_values) + b
-    # # activation function calling the relu function
-    # act = np.maximum(0, z)
-    # print(act)
 def  main():
     x = np.linspace(-10,10,100)
     # two_layer_ffn()
