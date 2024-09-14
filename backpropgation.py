@@ -8,7 +8,7 @@ def two_layer_backpropation():
     n_inputs =4
     y = 1
     weights = np.random.rand(num_layers, n_inputs).round(2)
-    bias = np.random.rand(num_neuron).round(2)
+    bias = np.random.rand(num_neurons).round(2)
     x = np.array([[1], [0], [1], [0]])
     h1 = np.dot(weights,x) + bias
     relu = np.maximum(0,h1)
