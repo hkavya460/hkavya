@@ -9,30 +9,6 @@ import   torch.nn.functional as f
 from torchvision.transforms import ToTensor
 from torch.nn import Conv2d ,MaxPool2d ,ReLU
 import matplotlib.pyplot as plt
-#with learanable parameters
-# m = nn.BatchNorm2d(100)
-#witout learanable parametres
-# m = nn.BatchNorm2d(100,affine=False)
-#
-# input = torch.rand(20,100,35,45)
-# # print(input.shape)
-#
-# n = m(input)
-# # print(n)
-#
-# train_data = MNIST(root='mnist',download=True,train=True,transform=ToTensor())
-# test_data = MNIST(root='mnist',download=True,train=False,transform=ToTensor())
-# # print(train_data)
-#
-# model= nn.Sequential()
-# model.add(Conv2d(32,kernel_size=(3,3)))
-# model.add(ReLU)
-# model.add(MaxPool2d(2,2))
-# model.add(Conv2d(64,kernel_size=(3,3)))
-# model.add(ReLU)
-# model = nn.Flatten()
-# model= nn.Linear()
-
 import numpy as np
 def relu(x):
     return np.maximum(0,x)
@@ -69,32 +45,14 @@ def normalization():
     h3_norm = gamma * ((a3- np.mean(a3)) / (np.std(a3) + epislon) + beta)
     # print(h3_norm.shape)
 
-
-import tensorflow
-# normalization()
+normalization()
 
 #batch normalization for training data
 import tensorflow as tf
-# from tensorflow.python.layers.normalization import BatchNormalization
-# from tensorflow.python.keras.models import Sequential
-# from tensorflow.python.keras.layers import Dense ,Activation
-
-#
-# model = Sequential([Dense(units=10,input_size=(1,4),activation='relu'),
-#                     BatchNormalization(axis=1),
-#                     Dense(units=16,activation='relu'),BatchNormalization(axis=1)
-#                        ,Dense(units=4,activation='softmax')])
-# criterion = nn.CrossEntropyLoss()
-# optimizer = torch.optim.SGD(model.parameters(),lr=0.01)
-# v= model.compile(optimizer =tf.python.keras.optimizers.SGD(learning_reate=0.01),loss='categorical_crossentropy',metrics=['accuarcy'])
-
-
 torch.manual_seed(41)
 import torch.nn.init
-
 data = datasets.MNIST(root='data',download=True)
 print(len(data))
-
 # plottting the datasets images
 
 image,labels = data[0]
