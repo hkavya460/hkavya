@@ -1,6 +1,6 @@
 #captalize the letters
 fruits =  ['mango', 'kiwi', 'strawberry', 'guava', 'pineapple', 'mandarin orange']
-'''
+
 capitalized_fruits = []
 for fruits in fruits:
     capitalized = (fruits.capitalize())
@@ -163,7 +163,7 @@ try:
     print(f"Result: {result}")
 except FormulaError as e:
     print(f"Error: {e}")
-'''
+
 
 
 
