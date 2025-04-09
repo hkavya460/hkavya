@@ -133,14 +133,14 @@ def function():
     plt.show()
 def main():
     function()
-    #implement_funct()
-    #implement_function_2()
-    #gaussian_pdf()
-    #load_file()
-    #dis_flut_scor()
+    implement_funct()
+    implement_function_2()
+    gaussian_pdf()
+    load_file()
+    dis_flut_scor()
 
    # A = np.array([[1,2,3],[4,5,6]])
-   # multiply_matrices(A)
+   multiply_matrices(A)
 if __name__=="__main__":
     main()
 
