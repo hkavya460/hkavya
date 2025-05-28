@@ -13,3 +13,6 @@ Negtome = "https://mips.helmholtz-muenchen.de/proj/ppi/negatome/"
 # Protein sequence data from the uniprot database 
 
 UniProt - "https://www.uniprot.org/" 
+
+#Gene expression Ombinbus(GEO)  database  for gene expression data of Rheumatoid arhritis 
+GEO = "https://www.ncbi.nlm.nih.gov/geo/"
