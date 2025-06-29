@@ -3,13 +3,12 @@ The pipeline includes data preprocessing, graph construction, model training, an
 
 **1. data_loading.py**
 Purpose: Handles loading and preprocessing of protein sequence data.
-Details:Reads raw sequence datasets.
+Reads raw sequence datasets.
 Performs any necessary cleaning, tokenization, or formatting.
 Prepares data for graph construction and modeling steps.
 
 **2. Graph_construction.py**
 Purpose: Constructs a protein interaction graph where nodes represent protein pairs and edges are formed when nodes share a protein.
-Details:
 Converts protein sequences into vector representations.
 Forms pairwise embeddings of proteins.
 Builds a graph structure based on shared proteins.
@@ -18,7 +17,6 @@ Outputs: Graph-related data files used in subsequent model training, stored in t
 
 **3. model_training.py**
 Purpose: Trains the transformer-based model on the constructed graph data.
-Details:
 Initializes the model using BERT-based architecture.
 Feeds in node features, adjacency matrices, and positional encodings.
 Handles training loop, loss calculation, and optimization.
