@@ -1,0 +1,29 @@
+Tools and Technologies
+
+This project uses a combination of R-based and Python-based tools for biological data processing, deep learning, and visualization.
+
+## Transcrptomic analysis 
+Limma: Microarray differential expression analysis (R)
+DESeq2: RNA-Seq differential expression analysis (R)
+Affymetrix Array Chips: Platform for microarray data
+
+## Data Visualization
+ggplot2: Volcano plots and heatmap visualizations (R)
+
+## Clustering and Enrichment
+K-Means ,Hierarchical Clustering: DEG clustering methods
+DAVID,STRING: Functional enrichment and interaction analysis
+
+## Protein Embedding
+ SeqVec(via BioEmbeddings): Protein sequence embeddings
+UniProt: Source of raw protein sequences
+
+## Graph-Based Deep Learning
+PyTorch: Core framework for model training
+Graph-BERT: Transformer-based graph encoder for PPI prediction
+
+## Data Sources
+BioGRID: Positive PPI dataset
+Negatome: Negative PPI dataset
+GEO: Micraorray and RNA-Seq data
+
