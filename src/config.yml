@@ -1,0 +1,10 @@
+global:
+  sequences_file: "/mnt/data/shyam/kavya/Project/negtome_human_protein_sequence.fasta"
+  prefix: "negtome_embedding" 
+
+  simple_remapping: True
+
+pipeline:
+    type: embed
+    protocol: seqvec
+    reduce: True 
